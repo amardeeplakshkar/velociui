@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Bloxat';
+  src: url("https://apricot-selected-dog-88.mypinata.cloud/ipfs/QmateZY1hAB4HWS2mfkyRC9dRDbobecVVQBixCxQbvpv9A");
+}
 body {
   overflow-x: hidden;
 }

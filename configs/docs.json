@@ -14,6 +14,46 @@
       "type": "demo"
     },
     {
+      "name": "test",
+      "componentArray": [
+        {
+          "componentName": "testcomponent",
+          "filesrc": "components/test/test.tsx",
+          "iframeSrc": "live-components/testcomponent",
+          "parentlink": "test",
+          "parentName": "test"
+        }
+      ],
+      "type": "test"
+    },
+    {
+      "name": "Marquee",
+      "componentArray": [
+        {
+          "componentName": "marquee",
+          "filesrc": "components/marquee/marquee.tsx",
+          "iframeSrc": "live-components/marquee",
+          "parentlink": "marquee",
+          "parentName": "Marquee"
+        },
+          {
+          "componentName": "marquee-vertical",
+          "filesrc": "components/marquee/marquee-vertical.tsx",
+          "iframeSrc": "live-components/marquee-vertical",
+          "parentlink": "marquee",
+          "parentName": "Marquee"
+        },
+        {
+          "componentName": "marquee-3d",
+          "filesrc": "components/marquee/marquee-3d.tsx",
+          "iframeSrc": "live-components/marquee-3d",
+          "parentlink": "marquee",
+          "parentName": "Marquee"
+        }
+      ],
+      "type": "creative"
+    },
+    {
       "name": "Buttons",
       "componentArray": [
         {

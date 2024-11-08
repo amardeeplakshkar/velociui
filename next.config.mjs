@@ -7,7 +7,7 @@ import createMDX from '@next/mdx';
 import { remarkCodeHike, recmaCodeHike } from 'codehike/mdx';
 import rehypeSlug from 'rehype-slug';
 // Import the JSON file
-import docsData from './configs/docs.json' assert { type: 'json' };
+const docsData = JSON.parse(fs.readFileSync(path.resolve('./configs/docs.json'), 'utf-8'));
 // import dataArray from './configs/docs';
 
 const { dataArray } = docsData;
@@ -176,6 +176,9 @@ const nextConfig = {
       {
         hostname: 'img.freepik.com',
       },
+      {
+        hostname: 'apricot-selected-dog-88.mypinata.cloud'
+      }
     ],
   },
   // Add other Next.js config options here

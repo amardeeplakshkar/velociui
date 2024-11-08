@@ -1,0 +1,93 @@
+export const metadata = {
+  title: 'Marquee Component',
+  description:
+    'A customizable Marquee component with animation, direction control, pause on hover, and repeat options. Ideal for creating smooth, dynamic UI elements in React.',
+};
+
+---
+
+## Component Preview
+
+<ComponentCodePreview name="marquee" hasReTrigger isFitheight />
+
+## Examples
+
+### Vertical Marquee
+
+<ComponentCodePreview name="marquee-vertical" hasReTrigger isFitheight />
+
+### 3D Marquee
+
+<ComponentCodePreview name="marquee-3d" hasReTrigger isCard />
+
+---
+
+## Usage
+
+```tsx marquee.tsx
+import { cn } from "@/lib/utils";
+
+interface MarqueeProps {
+  className?: string;
+  reverse?: boolean;
+  pauseOnHover?: boolean;
+  children?: React.ReactNode;
+  vertical?: boolean;
+  repeat?: number;
+  [key: string]: any;
+}
+
+export default function Marquee({
+  className,
+  reverse,
+  pauseOnHover = false,
+  children,
+  vertical = false,
+  repeat = 4,
+  ...props
+}: MarqueeProps) {
+  return (
+    <div
+      {...props}
+      className={cn(
+        "group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
+        {
+          "flex-row": !vertical,
+          "flex-col": vertical,
+        },
+        className,
+      )}
+    >
+      {Array(repeat)
+        .fill(0)
+        .map((_, i) => (
+          <div
+            key={i}
+            className={cn("flex shrink-0 justify-around [gap:var(--gap)]", {
+              "animate-marquee flex-row": !vertical,
+              "animate-marquee-vertical flex-col": vertical,
+              "group-hover:[animation-play-state:paused]": pauseOnHover,
+              "[animation-direction:reverse]": reverse,
+            })}
+          >
+            {children}
+          </div>
+        ))}
+    </div>
+  );
+}
+```
+
+---
+
+## Props
+
+| Prop           | Type               | Default | Description                                                                                                 |
+| -------------- | ------------------ | ------- | ----------------------------------------------------------------------------------------------------------- |
+| `className`    | `string`           |         | Optional CSS class for styling the main marquee container.                                                  |
+| `reverse`      | `boolean`          | `false` | Determines if the marquee animation should play in reverse.                                                 |
+| `pauseOnHover` | `boolean`          | `false` | Pauses the marquee animation when hovered.                                                                  |
+| `children`     | `React.ReactNode`  |         | The content to display within the marquee animation.                                                        |
+| `vertical`     | `boolean`          | `false` | Controls the direction of the marquee; if `true`, the marquee scrolls vertically instead of horizontally.   |
+| `repeat`       | `number`           | `4`     | Specifies the number of times the content should repeat within the marquee.
+

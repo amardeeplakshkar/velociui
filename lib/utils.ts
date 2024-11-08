@@ -47,15 +47,15 @@ export function throttle(fn: (...args: any[]) => any, wait: number) {
 }
 
 export const siteConfig = {
-  name: 'UI-Layout-starter-kit',
-  url: 'https://uilayout-starter-repo.vercel.app/',
-  ogImage: 'https://uilayout-starter-repo.vercel.app/og.jpg',
+  name: 'VelociUI',
+  url: 'https://velociui.vercel.app/',
+  ogImage: 'https://velociui.vercel.app/og.png',
   description:
-    'An open-source starter repo for those who want to create their own component library.',
+    'VelociUI is a high-performance, customizable React UI component library designed for speed and ease of use. With a growing collection of sleek and accessible components, VelociUI enables developers to quickly build modern interfaces while maintaining full control over styling and functionality. Whether you’re building a new project from scratch or enhancing an existing app, VelociUI provides powerful tools to accelerate your development workflow.',
   links: {
-    twitter: 'https://twitter.com/naymur_dev',
-    linkedin: 'https://www.linkedin.com/in/naymur-rahman',
-    github: 'https://github.com/naymurdev',
+    twitter: 'https://twitter.com/amardeep.devs',
+    linkedin: 'https://in.linkedin.com/in/amardeep-lakshkar-24a339244',
+    github: 'https://github.com/amardeeplakshkar',
   },
 };
 

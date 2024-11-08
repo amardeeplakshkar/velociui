@@ -11,13 +11,18 @@ export const SpecialComponents = [
     component: 'card',
   },
 
-  { href: '/components/footers', name: 'Footers' },
-  { href: '/components/horizontal-scroll', name: 'Horizontal Scroll' },
-  {
-    href: '/components/demo',
-    name: 'Demo Components',
-    new: true,
-  },
+  // { href: '/components/footers', name: 'Footers' },
+  // { href: '/components/horizontal-scroll', name: 'Horizontal Scroll' },
+  // {
+  //   href: '/components/demo',
+  //   name: 'Demo Components',
+  //   new: true,
+  // },
+  // {
+  //   href: '/components/test',
+  //   name: 'Test Components',
+  //   new: true,
+  // },
 ];
 export const MainComponents = [
   {
@@ -27,10 +32,15 @@ export const MainComponents = [
     new: true,
     component: 'creative',
   },
-
   {
     href: '/components/motion-number',
     name: 'Motion Number',
+    new: true,
+    component: 'creative',
+  },
+  {
+    href: '/components/marquee',
+    name: 'Marquee',
     new: true,
     component: 'creative',
   },

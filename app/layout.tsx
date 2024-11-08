@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: [
     'Next.js',
+    'VelociUI',
+    'Amardeeep Lakshkar',
+    'velociui',
     'React',
     'Tailwind CSS',
     'framer-motion',
@@ -37,11 +40,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: 'naymur rahman',
-      url: 'https://naymur-rahman.com/',
+      name: 'Amardeep Lakshkar',
+      url: 'https://amardeep-portfolio.vercel.app/',
     },
   ],
-  creator: 'naymur',
+  creator: 'Amardeep Lakshkar',
   openGraph: {
     type: 'website',
     locale: 'en_US',

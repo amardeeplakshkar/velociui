@@ -36,6 +36,20 @@ const appsDesign = [
     name: 'Cards',
     imgSrc: preview.card,
   },
+  {
+    url: '/components/blur-vignette',
+    name: 'Blur Vignette',
+    new: true,
+    component: 'creative',
+    imgSrc: preview.blurvignette,
+  },
+  {
+    url: '/components/marquee',
+    name: 'Marquee',
+    new: true,
+    component: 'creative',
+    imgSrc: preview.marquee,
+  },
 ];
 
 export default function Home() {
@@ -66,8 +80,8 @@ export default function Home() {
                         <Image
                           src={component.imgSrc}
                           alt='hero-sec'
-                          width={100}
-                          height={100}
+                          width={300}
+                          height={300}
                           className='w-full h-full   rounded-md'
                         />
                       </AspectRatio.Root>
