@@ -23,7 +23,7 @@ export const basePath = [
   },
 ];
 type DocsSidebarProps = {
-  closeSheet: () => void;
+  closeSheet?: () => void;
 };
 
 function DocsSidebar({ closeSheet }: DocsSidebarProps) {
@@ -65,7 +65,7 @@ function DocsSidebar({ closeSheet }: DocsSidebarProps) {
                       href={link.href}
                       onClick={() => {
                         addVisitedPage(link.href, link.name);
-                        closeSheet();
+                      if (closeSheet) closeSheet();;
                       }}
                       className={`flex gap-2 group font-medium items-center py-1  transition-all ${
                         link.href === pathname
@@ -105,7 +105,7 @@ function DocsSidebar({ closeSheet }: DocsSidebarProps) {
                     href={link.href}
                     onClick={() => {
                       addVisitedPage(link.href, link.name);
-                      closeSheet();
+                    if (closeSheet) closeSheet();;
                     }}
                   >
                     {link.name}
@@ -145,7 +145,7 @@ export const ItemsWithName = ({
   items: any;
   pathname: string;
   addVisitedPage: (href: string, name: string) => void;
-  closeSheet: () => void; // Define closeSheet type
+  closeSheet?: () => void; // Define closeSheet type
 })=> {
   const groupRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
@@ -182,7 +182,7 @@ export const ItemsWithName = ({
               href={link.href}
               onClick={() => {
                 addVisitedPage(link.href, link.name);
-                closeSheet();
+              if (closeSheet) closeSheet();;
               }}
             >
               {link.name}
