@@ -9,9 +9,11 @@ export default async function ComponentLayout({
 }) {
   return (
     <>
-      <Header />
+      <Header/>
       <main className='mx-auto pl-2  2xl:container lg:grid 2xl:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-4'>
+        <div className='max-lg:hidden'>
         <DocsSidebar />
+        </div>
         <div className=' min-w-0 max-w-full'>{children}</div>
       </main>
     </>

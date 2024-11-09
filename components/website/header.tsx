@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { SearchDialog } from './searchbar';
 import Image from 'next/image';
+import Topnav from './Topnav';
 // import MobileHeader from './moibile-header'
 
 function Header() {
@@ -76,7 +77,7 @@ function Header() {
             <a
               target='_blank'
               href='https://x.com/amardeep.devs'
-              className='border flex-shrink-0 bg-primary  text-primary-foreground text-2xl w-12   grid  place-content-center    rounded-md'
+              className='border flex-shrink-0 bg-primary  text-primary-foreground text-2xl w-12   grid  place-content-center max-md:hidden  rounded-md'
             >
               <svg
                 width='120'
@@ -109,6 +110,7 @@ function Header() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            <Topnav/>
           </div>
         </div>
       </header>

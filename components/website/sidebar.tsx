@@ -22,8 +22,11 @@ export const basePath = [
     icon: <Component />,
   },
 ];
+type DocsSidebarProps = {
+  closeSheet: () => void;
+};
 
-function DocsSidebar() {
+function DocsSidebar({ closeSheet }: DocsSidebarProps) {
   const pathname = usePathname();
   const { setTheme } = useTheme();
   const { addVisitedPage, getRecentPages, removeAllRecentPages } =
@@ -50,7 +53,7 @@ function DocsSidebar() {
   }, [getRecentPages]);
 
   return (
-    <aside className='h-full border-r'>
+    <aside className='h-full'>
       <div className='sticky top-0 h-screen w-full rounded-md pt-[3.2em]'>
         <ScrollArea className='h-full py-4'>
           <ul className='pb-1'>
@@ -60,7 +63,10 @@ function DocsSidebar() {
                   <li key={`id-${index}`}>
                     <Link
                       href={link.href}
-                      onClick={() => addVisitedPage(link.href, link.name)}
+                      onClick={() => {
+                        addVisitedPage(link.href, link.name);
+                        closeSheet();
+                      }}
                       className={`flex gap-2 group font-medium items-center py-1  transition-all ${
                         link.href === pathname
                           ? 'active-nav'
@@ -93,11 +99,14 @@ function DocsSidebar() {
                       ? 'dark:border-white border-black text-black dark:text-white font-semibold'
                       : 'dark:text-slate-400 2xl:font-normal font-medium hover:border-black/60 dark:hover:border-white/50 text-slate-500 hover:text-slate-900'
                   }`}
-                  // data-active={link.id === pathname}
+                  data-active={link.id === pathname}
                 >
                   <Link
                     href={link.href}
-                    onClick={() => addVisitedPage(link.href, link.name)}
+                    onClick={() => {
+                      addVisitedPage(link.href, link.name);
+                      closeSheet();
+                    }}
                   >
                     {link.name}
                   </Link>
@@ -117,6 +126,7 @@ function DocsSidebar() {
               key={index}
               pathname={pathname}
               addVisitedPage={addVisitedPage}
+              closeSheet={closeSheet}
             />
           ))}
         </ScrollArea>
@@ -129,7 +139,14 @@ export const ItemsWithName = ({
   items,
   pathname,
   addVisitedPage,
-}: any) => {
+  closeSheet, // Add closeSheet here
+}: {
+  group: string;
+  items: any;
+  pathname: string;
+  addVisitedPage: (href: string, name: string) => void;
+  closeSheet: () => void; // Define closeSheet type
+})=> {
   const groupRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
 
@@ -163,7 +180,10 @@ export const ItemsWithName = ({
           >
             <Link
               href={link.href}
-              onClick={() => addVisitedPage(link.href, link.name)}
+              onClick={() => {
+                addVisitedPage(link.href, link.name);
+                closeSheet();
+              }}
             >
               {link.name}
             </Link>
