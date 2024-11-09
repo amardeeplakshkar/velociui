@@ -76,7 +76,7 @@ function Header() {
 
             <a
               target='_blank'
-              href='https://x.com/amardeep.devs'
+              href='https://x.com/amardeepdevs'
               className='border flex-shrink-0 bg-primary  text-primary-foreground text-2xl w-12   grid  place-content-center max-md:hidden  rounded-md'
             >
               <svg

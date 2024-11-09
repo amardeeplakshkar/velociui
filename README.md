@@ -205,5 +205,5 @@ I want to thank https://magicui.design and https://x.com/jakubkrehel for what th
 
 ## 👤 Author (Amardeep Lakshkar)
 
-- X: [@amardeep.devs](https://x.com/amardeep.devs)
-- LinkedIn: [in/amardeep-lakshkar](https://in.linkedin.com/in/amardeep-lakshkar-24a339244)
+- X: [@AmardeepDevs](https://x.com/amardeepdevs)
+- LinkedIn: [@AmardeepLakshkar](https://in.linkedin.com/in/amardeep-lakshkar-24a339244)
