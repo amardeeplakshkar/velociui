@@ -139,7 +139,7 @@ export const ItemsWithName = ({
   items,
   pathname,
   addVisitedPage,
-  closeSheet, // Add closeSheet here
+  closeSheet,
 }: {
   group: string;
   items: any;
