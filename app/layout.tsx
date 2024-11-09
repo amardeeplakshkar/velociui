@@ -66,12 +66,12 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: '@naymur_dev',
+    creator: '@AmardeepDevs',
   },
   icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
 };
