@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <>
-      <header className=' fixed left-0 top-0 z-10 w-full border-b-[1px] border-border dark:bg-black/40 bg-white/40 px-2 py-2 backdrop-blur-lg'>
+      <header className=' fixed left-0 top-0 z-10 w-full border-b-[1px] border-border dark:bg-black/40 bg-white/40 px-2 py-2 backdrop-blur-lg '>
         <div className='mx-auto flex items-center justify-between gap-2 px-2 2xl:container'>
           <Link href='/' className=''>
             <div className='relative gap-2 flex items-center justify-center'>

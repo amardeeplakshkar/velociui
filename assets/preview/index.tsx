@@ -5,6 +5,10 @@ import motionNumber from '@/assets/preview/motion-number.svg';
 import clippath from '@/assets/preview/clip-path.svg';
 import marquee from '@/assets/preview/marquee.png';
 import blurvignette from '@/assets/preview/blur-vignette.png';
+import globe from '@/assets/preview/globe.png';
+import confetti from '@/assets/preview/confetti.png';
+import circles from '@/assets/preview/circles.png';
+
 const preview = {
   horizontascroll,
   motionNumber,
@@ -12,6 +16,9 @@ const preview = {
   buttons,
   card,
   marquee,
-  blurvignette
+  blurvignette,
+  globe,
+  confetti,
+  circles,
 };
 export default preview;

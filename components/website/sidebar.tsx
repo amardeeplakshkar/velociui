@@ -53,7 +53,7 @@ function DocsSidebar({ closeSheet }: DocsSidebarProps) {
   }, [getRecentPages]);
 
   return (
-    <aside className='h-full'>
+    <aside className='h-full lg:border-r'>
       <div className='sticky top-0 h-screen w-full rounded-md pt-[3.2em]'>
         <ScrollArea className='h-full py-4'>
           <ul className='pb-1'>
@@ -162,7 +162,7 @@ export const ItemsWithName = ({
     }
   }, [pathname, items]);
   return (
-    <div ref={groupRef} key={group}>
+    <div ref={groupRef} key={group} className=''>
       <button className='text-[1rem] relative flex w-full items-center justify-between pr-4 cursor-pointer dark:font-normal dark:text-gray-100 font-normal capitalize my-1'>
         {group}
       </button>

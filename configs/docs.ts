@@ -26,6 +26,18 @@ export const SpecialComponents = [
 ];
 export const MainComponents = [
   {
+    href: '/components/confetti',
+    name: 'Confetti',
+    new: true,
+    component: 'creative',
+  },
+  {
+    href: '/components/orbitingcircles',
+    name: 'Orbiting Circles',
+    new: true,
+    component: 'creative',
+  },
+  {
     href: '/components/blur-vignette',
     name: 'Blur Vignette',
 
@@ -44,4 +56,11 @@ export const MainComponents = [
     new: true,
     component: 'creative',
   },
+  {
+    href: '/components/globe',
+    name: 'Globe',
+    new: true,
+    component: 'creative',
+  },
+
 ];

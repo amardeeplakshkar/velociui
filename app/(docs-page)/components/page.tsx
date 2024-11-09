@@ -7,6 +7,20 @@ import Image from 'next/image';
 import preview from '@/assets/preview';
 const appsDesign = [
   {
+    url: '/components/confetti',
+    name: 'Confetti',
+    new: true,
+    component: 'creative',
+    imgSrc: preview.confetti,
+  },
+  {
+    url: '/components/marquee',
+    name: 'Marquee',
+    new: true,
+    component: 'creative',
+    imgSrc: preview.marquee,
+  },
+  {
     id: 'motionNumber',
     name: 'motion number',
     url: '/components/motion-number',
@@ -44,11 +58,18 @@ const appsDesign = [
     imgSrc: preview.blurvignette,
   },
   {
-    url: '/components/marquee',
-    name: 'Marquee',
+    url: '/components/circles',
+    name: 'Circles',
     new: true,
     component: 'creative',
-    imgSrc: preview.marquee,
+    imgSrc: preview.circles,
+  },
+  {
+    url: '/components/globe',
+    name: 'Globe',
+    new: true,
+    component: 'creative',
+    imgSrc: preview.globe,
   },
 ];
 

@@ -27,6 +27,90 @@
       "type": "test"
     },
     {
+      "name": "Globe",
+      "componentArray": [
+        {
+          "componentName": "globe",
+          "filesrc": "components/globe/globe.tsx",
+          "iframeSrc": "live-components/globe",
+          "parentlink": "globe",
+          "parentName": "Globe"
+        }
+      ],
+      "type": "creative"
+    },
+
+    {
+      "name": "OrbitingCircles",
+      "componentArray": [
+        {
+          "componentName": "orbitingcircles",
+          "filesrc": "components/orbitingcircles/orbitingcircles.tsx",
+          "iframeSrc": "live-components/orbitingcircles",
+          "parentlink": "orbitingcircles",
+          "parentName": "OrbitingCircles"
+        }
+      ],
+      "type": "creative"
+    },
+
+    {
+      "name": "Confetti",
+      "componentArray": [
+        {
+          "componentName": "confetti",
+          "filesrc": "components/confetti/confetti.tsx",
+          "iframeSrc": "live-components/confetti",
+          "parentlink": "confetti",
+          "parentName": "Confetti"
+        },
+        {
+          "componentName": "confetti-random",
+          "filesrc": "components/confetti/confetti-random.tsx",
+          "iframeSrc": "live-components/confetti-random",
+          "parentlink": "confetti",
+          "parentName": "Confetti"
+        },
+        {
+          "componentName": "confetti-custom",
+          "filesrc": "components/confetti/confetti-custom.tsx",
+          "iframeSrc": "live-components/confetti-custom",
+          "parentlink": "confetti",
+          "parentName": "Confetti"
+        },
+        {
+          "componentName": "confetti-fireworks",
+          "filesrc": "components/confetti/confetti-fireworks.tsx",
+          "iframeSrc": "live-components/confetti-fireworks",
+          "parentlink": "confetti",
+          "parentName": "Confetti"
+        },
+        {
+          "componentName": "confetti-sidecannons",
+          "filesrc": "components/confetti/confetti-sidecannons.tsx",
+          "iframeSrc": "live-components/confetti-sidecannons",
+          "parentlink": "confetti",
+          "parentName": "Confetti"
+        },
+        {
+          "componentName": "confetti-stars",
+          "filesrc": "components/confetti/confetti-stars.tsx",
+          "iframeSrc": "live-components/confetti-stars",
+          "parentlink": "confetti",
+          "parentName": "Confetti"
+        },
+        {
+          "componentName": "confetti-prev",
+          "filesrc": "components/confetti/confetti-prev.tsx",
+          "iframeSrc": "live-components/confetti-prev",
+          "parentlink": "confetti",
+          "parentName": "Confetti"
+        }
+      ],
+      "type": "creative"
+    },
+
+    {
       "name": "Marquee",
       "componentArray": [
         {

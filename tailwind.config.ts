@@ -60,6 +60,7 @@ const config: Config = {
         },
       },
       animation: {
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
         border: 'border 4s linear infinite',
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
         marquee: 'marquee var(--duration) linear infinite',
@@ -67,6 +68,16 @@ const config: Config = {
         rainbow: "rainbow var(--speed, 2s) infinite linear",
       },
       keyframes: {
+        orbit: {
+          "0%": {
+            transform:
+              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+            transform:
+              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        },
         rainbow: {
           "0%": { "background-position": "0%" },
           "100%": { "background-position": "200%" },
