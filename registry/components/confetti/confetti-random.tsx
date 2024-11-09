@@ -1,3 +1,5 @@
+'use client'
+
 import { ConfettiButton } from "@/components/core/confetti";
 
 export default function ConfettiButtonDemo() {

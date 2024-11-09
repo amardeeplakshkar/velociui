@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from "@/components/website/ui/button";
 import confetti from "canvas-confetti";
 
