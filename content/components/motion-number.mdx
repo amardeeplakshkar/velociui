@@ -123,40 +123,58 @@ export default NumberShuffle;
 
 ## Props
 
-| Prop         | Type           | Default | Description                                                   |
-| ------------ | -------------- | ------- | ------------------------------------------------------------- |
-| currentValue | number         |         | The current number value to be displayed.                     |
-| format       | `NumberFormat` | `{}`    | Options for formatting the number.                            |
-| before       | `OptionProps`  |         | Optional props for content displayed before the number.       |
-| first        | `OptionProps`  |         | Optional props for content displayed before the first number. |
-| last         | `OptionProps`  |         | Optional props for content displayed after the last number.   |
-| after        | `OptionProps`  |         | Optional props for content displayed after the number.        |
-| clasname     | `string`       |         | Optional CSS class for styling the component.                 |
-
-
-
-
-
-
-## test
-
-
 <div style={{ overflowX: 'auto' }}>
-  <table>
+  <table style={{ borderCollapse: 'collapse', width: '100%' }}>
     <thead>
       <tr>
-        <th>Prop</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
+        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Prop</th>
+        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Type</th>
+        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Default</th>
+        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>options</td>
-        <td>ConfettiOptions</td>
-        <td>Options for configuring individual confetti animations, such as colors, shapes, and particle count.</td>
-        <td>undefined</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>currentValue</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>number</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>The current number value to be displayed.</td>
+      </tr>
+      <tr>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>format</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>NumberFormat</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>{`{}`}</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Options for formatting the number.</td>
+      </tr>
+      <tr>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>before</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed before the number.</td>
+      </tr>
+      <tr>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>first</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed before the first number.</td>
+      </tr>
+      <tr>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>last</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed after the last number.</td>
+      </tr>
+      <tr>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>after</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed after the number.</td>
+      </tr>
+      <tr>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>clasname</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>string</td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
+        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional CSS class for styling the component.</td>
       </tr>
     </tbody>
   </table>
