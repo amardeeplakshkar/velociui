@@ -1,3 +1,6 @@
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/website/ui/table"
+import { Badge } from "@/components/website/ui/badge"
+
 export const metadata = {
   title: 'Globe',
   description:
@@ -145,3 +148,103 @@ export function Globe({
 ```
 
 ---
+
+## Props
+
+
+ <div className="rounded-lg border bg-background">
+      <Table className="border-collapse">
+        <TableHeader>
+          <TableRow className="hover:bg-transparent">
+            <TableHead className="w-[150px] border-r last:border-r-0">Prop</TableHead>
+            <TableHead className="w-[150px] border-r last:border-r-0">Type</TableHead>
+            <TableHead className="border-r last:border-r-0">Description</TableHead>
+            <TableHead className="text-right">Default</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell className="border-r last:border-r-0">
+              <code className="rounded bg-muted px-1 py-0.5">className</code>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              <Badge variant="secondary" className="font-mono text-xs">
+                string
+              </Badge>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              Optional custom class name to apply additional styling to the component.
+            </TableCell>
+            <TableCell className="text-right">
+              <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="border-r last:border-r-0">
+              <code className="rounded bg-muted px-1 py-0.5">config</code>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              <Badge variant="secondary" className="font-mono text-xs">
+                COBEOptions
+              </Badge>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              Configuration options for the globe, such as appearance, map, markers, and rendering behavior.
+            </TableCell>
+            <TableCell className="text-right">
+              <code className="rounded bg-muted px-1 py-0.5">GLOBE_CONFIG</code>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="border-r last:border-r-0">
+              <code className="rounded bg-muted px-1 py-0.5">className</code>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              <Badge variant="secondary" className="font-mono text-xs">
+                string
+              </Badge>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              Optional custom class name to apply additional styling to the component.
+            </TableCell>
+            <TableCell className="text-right">
+              <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="border-r last:border-r-0">
+              <code className="rounded bg-muted px-1 py-0.5">onRender</code>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              <Badge variant="secondary" className="font-mono text-xs">
+                function
+              </Badge>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              Callback function called during each frame of the globe render cycle. Used to control globe state.
+            </TableCell>
+            <TableCell className="text-right">
+              <code className="rounded bg-muted px-1 py-0.5">() => {} </code>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell className="border-r last:border-r-0">
+              <code className="rounded bg-muted px-1 py-0.5">markers</code>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              <Badge variant="secondary" className="font-mono text-xs">
+                Array
+              </Badge>
+            </TableCell>
+            <TableCell className="border-r last:border-r-0">
+              List of marker objects to be rendered on the globe with specified latitude, longitude, and size.
+            </TableCell>
+            <TableCell className="text-right">
+              <code className="rounded bg-muted px-1 py-0.5">
+                [{`{ location: [14.5995, 120.9842], size: 0.03 }`}]
+              </code>
+            </TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    </div>

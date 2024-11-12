@@ -1,3 +1,7 @@
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/website/ui/table"
+import { Badge } from "@/components/website/ui/badge"
+
+
 export const metadata = {
   title: 'Orbiting Circles',
   description:
@@ -80,13 +84,103 @@ export default function OrbitingCircles({
 
 ---
 
-## Props
+## Props for `Orbiting Circles`
 
-| Prop         | Type               | Description                                   | Default |
-|--------------|--------------------|-----------------------------------------------|---------|
-| `className`  | `string`           | The class name for the component.             | `""`    |
-| `children`   | `React.ReactNode`  | The children nodes of the component.          | `null`  |
-| `reverse`    | `boolean`          | If `true`, the animation plays in reverse.    | `false` |
-| `duration`   | `number`           | The duration of the animation in seconds.     | `20`    |
-| `delay`      | `number`           | The delay before the animation starts, in seconds. | `10` |
-| `radius`     | `number`           | The radius of the orbit in pixels.            | `50`    |
+<div className="rounded-lg border bg-background">
+  <Table className="border-collapse">
+    <TableHeader>
+      <TableRow className="hover:bg-transparent">
+        <TableHead className="w-[150px] border-r last:border-r-0">Prop</TableHead>
+        <TableHead className="w-[150px] border-r last:border-r-0">Type</TableHead>
+        <TableHead className="border-r last:border-r-0">Description</TableHead>
+        <TableHead className="text-right">Default</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">className</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The class name for the component.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">""</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">children</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">React.ReactNode</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The children nodes of the component.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">null</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">reverse</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">boolean</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          If <code>true</code>, the animation plays in reverse.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">false</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">duration</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">number</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The duration of the animation in seconds.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">20</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">delay</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">number</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The delay before the animation starts, in seconds.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">10</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">radius</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">number</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The radius of the orbit in pixels.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">50</code>
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</div>

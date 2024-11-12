@@ -1,3 +1,6 @@
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/website/ui/table"
+import { Badge } from "@/components/website/ui/badge"
+
 export const metadata = {
   title: 'Marquee Component',
   description:
@@ -80,14 +83,103 @@ export default function Marquee({
 
 ---
 
-## Props
+## Props for `Marquee`
 
-| Prop           | Type               | Default | Description                                                                                                 |
-| -------------- | ------------------ | ------- | ----------------------------------------------------------------------------------------------------------- |
-| `className`    | `string`           |         | Optional CSS class for styling the main marquee container.                                                  |
-| `reverse`      | `boolean`          | `false` | Determines if the marquee animation should play in reverse.                                                 |
-| `pauseOnHover` | `boolean`          | `false` | Pauses the marquee animation when hovered.                                                                  |
-| `children`     | `React.ReactNode`  |         | The content to display within the marquee animation.                                                        |
-| `vertical`     | `boolean`          | `false` | Controls the direction of the marquee; if `true`, the marquee scrolls vertically instead of horizontally.   |
-| `repeat`       | `number`           | `4`     | Specifies the number of times the content should repeat within the marquee.
-
+<div className="rounded-lg border bg-background">
+  <Table className="border-collapse">
+    <TableHeader>
+      <TableRow className="hover:bg-transparent">
+        <TableHead className="w-[150px] border-r last:border-r-0">Prop</TableHead>
+        <TableHead className="w-[150px] border-r last:border-r-0">Type</TableHead>
+        <TableHead className="text-right">Default</TableHead>
+        <TableHead className="border-r last:border-r-0">Description</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">className</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional CSS class for styling the main marquee container.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">reverse</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">boolean</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">false</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Determines if the marquee animation should play in reverse.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">pauseOnHover</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">boolean</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">false</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Pauses the marquee animation when hovered.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">children</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">React.ReactNode</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The content to display within the marquee animation.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">vertical</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">boolean</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">false</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Controls the direction of the marquee; if true, the marquee scrolls vertically instead of horizontally.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">repeat</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">number</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">4</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Specifies the number of times the content should repeat within the marquee.
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</div>

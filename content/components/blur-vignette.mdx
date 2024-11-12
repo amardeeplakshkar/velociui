@@ -1,3 +1,6 @@
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/website/ui/table"
+import { Badge } from "@/components/website/ui/badge"
+
 export const metadata = {
   title: 'Blur Vignette Effect',
   description:
@@ -145,14 +148,117 @@ export const BlurVignetteArticle: React.FC<BlurVignetteArticleProps> = ({
 }
 ```
 
-## Props
+## Props for `Blur Vignette`
 
-| Prop               | Type              | Default | Description                                                  |
-| ------------------ | ----------------- | ------- | ------------------------------------------------------------ |
-| `classname`        | `string`          |         | Optional CSS class for styling the main vignette container.  |
-| `children`         | `React.ReactNode` |         | The content to display inside the vignette effect.           |
-| `radius`           | `string`          | `24px`  | The radius for the vignette effect.                          |
-| `inset`            | `string`          | `20px`  | The inset value for the vignette effect.                     |
-| `transitionLength` | `string`          | `44px`  | The length of the transition effect applied to the vignette. |
-| `blur`             | `string`          | `6px`   | The blur amount for the vignette effect.                     |
-| `blurclassname`    | `string`          |         | Optional CSS class for styling the blur effect container.    |
+<div className="rounded-lg border bg-background">
+  <Table className="border-collapse">
+    <TableHeader>
+      <TableRow className="hover:bg-transparent">
+        <TableHead className="w-[150px] border-r last:border-r-0">Prop</TableHead>
+        <TableHead className="w-[150px] border-r last:border-r-0">Type</TableHead>
+        <TableHead className="text-right">Default</TableHead>
+        <TableHead className="border-r last:border-r-0">Description</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">classname</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional CSS class for styling the main vignette container.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">children</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">React.ReactNode</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The content to display inside the vignette effect.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">radius</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">24px</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The radius for the vignette effect.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">inset</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">20px</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The inset value for the vignette effect.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">transitionLength</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">44px</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The length of the transition effect applied to the vignette.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">blur</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">6px</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The blur amount for the vignette effect.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">blurclassname</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional CSS class for styling the blur effect container.
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</div>

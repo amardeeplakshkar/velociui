@@ -91,7 +91,7 @@ export default async function IframeComponentPrieview(
           />
         </TabsContent>
         <TabsContent
-          className='mt-11 p-3 pt-2 pb-3 ring-offset-background'
+          className='mt-11 p-3 pt-2 pb-3 ring-offset-background '
           value={`${name}code`}
         >
           {children}

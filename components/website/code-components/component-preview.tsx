@@ -72,7 +72,7 @@ export default function ComponentPreview({
 
   return (
     <>
-      <div className='absolute right-1 top-0 z-[10] flex h-12 items-center gap-2'>
+      <div className='absolute right-1 top-0 z-[10] flex h-12 items-center gap-2 '>
         {responsive && (
           <div className='flex items-center gap-2 rounded-lg border bg-background p-1'>
             <button
@@ -146,7 +146,7 @@ export default function ComponentPreview({
                 )}
               >
                 <div
-                  className='h-full  not-prose mx-auto  '
+                  className='h-full  not-prose mx-auto hidden'
                   style={{ width: width }}
                 >
                   <iframe

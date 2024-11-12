@@ -1,3 +1,6 @@
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/website/ui/table"
+import { Badge } from "@/components/website/ui/badge"
+
 export const metadata = {
   title: 'Confetti',
   description:
@@ -179,21 +182,148 @@ export Confetti;
 
 ## Props for `Confetti`
 
-| Prop          | Type                        | Description                                                                                       | Default                                   |
-|---------------|-----------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| `options`     | `ConfettiOptions`           | Options for configuring individual confetti animations, such as colors, shapes, and particle count. | `undefined`                               |
-| `globalOptions` | `ConfettiGlobalOptions`   | Global options for confetti instance, including settings for resizing and using a worker.         | `{ resize: true, useWorker: true }`       |
-| `manualstart` | `boolean`                   | If `true`, confetti animation will not start automatically; it requires manual triggering.        | `false`                                   |
-| `children`    | `ReactNode`                 | Optional children nodes to render inside the `Confetti` component.                                | `undefined`                               |
-| `ref`         | `ConfettiRef`               | Ref object to access `fire` method from outside the component.                                    | `null`                                    |
-
+<div className="rounded-lg border bg-background">
+  <Table className="border-collapse">
+    <TableHeader>
+      <TableRow className="hover:bg-transparent">
+        <TableHead className="w-[150px] border-r last:border-r-0">Prop</TableHead>
+        <TableHead className="w-[200px] border-r last:border-r-0">Type</TableHead>
+        <TableHead className="border-r last:border-r-0">Description</TableHead>
+        <TableHead className="text-right">Default</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">options</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">ConfettiOptions</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Options for configuring individual confetti animations, such as colors, shapes, and particle count.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">globalOptions</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">ConfettiGlobalOptions</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Global options for confetti instance, including settings for resizing and using a worker.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">{"{ resize: true, useWorker: true }"}</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">manualstart</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">boolean</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          If <code className="rounded bg-muted px-1 py-0.5">true</code>, confetti animation will not start automatically; it requires manual triggering.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">false</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">children</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">ReactNode</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional children nodes to render inside the <code className="rounded bg-muted px-1 py-0.5">Confetti</code> component.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">ref</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">ConfettiRef</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Ref object to access <code className="rounded bg-muted px-1 py-0.5">fire</code> method from outside the component.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">null</code>
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</div>
 
 ## Props for `ConfettiButton`
 
-
-| Prop          | Type                         | Description                                                                                       | Default |
-|---------------|------------------------------|---------------------------------------------------------------------------------------------------|---------|
-| `options`     | `ConfettiOptions & ConfettiGlobalOptions & { canvas?: HTMLCanvasElement }` | Additional confetti options that apply when the button is clicked.                                 | `undefined` |
-| `children`    | `React.ReactNode`            | The content to display within the button.                                                         | `undefined` |
-| `...props`    | `ButtonProps`                | Additional properties passed to the underlying `Button` component.                                | `undefined` |
-
+<div className="rounded-lg border bg-background">
+  <Table className="border-collapse">
+    <TableHeader>
+      <TableRow className="hover:bg-transparent">
+        <TableHead className="w-[150px] border-r last:border-r-0">Prop</TableHead>
+        <TableHead className="w-[250px] border-r last:border-r-0">Type</TableHead>
+        <TableHead className="border-r last:border-r-0">Description</TableHead>
+        <TableHead className="text-right">Default</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">options</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">
+            ConfettiOptions & ConfettiGlobalOptions & {"{ canvas?: HTMLCanvasElement }"}
+          </Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Additional confetti options that apply when the button is clicked.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">children</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">React.ReactNode</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The content to display within the button.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">...props</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">ButtonProps</Badge>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Additional properties passed to the underlying <code>Button</code> component.
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</div>

@@ -1,3 +1,7 @@
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/website/ui/table"
+import { Badge } from "@/components/website/ui/badge"
+
+
 export const metadata = {
   title: 'Motion Number',
   description:
@@ -121,61 +125,117 @@ const NumberShuffle: React.FC<NumberShuffleProps> = ({
 export default NumberShuffle;
 ```
 
-## Props
+## Props for `Motion Number`
 
-<div style={{ overflowX: 'auto' }}>
-  <table style={{ borderCollapse: 'collapse', width: '100%' }}>
-    <thead>
-      <tr>
-        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Prop</th>
-        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Type</th>
-        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Default</th>
-        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>currentValue</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>number</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>The current number value to be displayed.</td>
-      </tr>
-      <tr>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>format</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>NumberFormat</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>{`{}`}</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Options for formatting the number.</td>
-      </tr>
-      <tr>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>before</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed before the number.</td>
-      </tr>
-      <tr>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>first</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed before the first number.</td>
-      </tr>
-      <tr>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>last</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed after the last number.</td>
-      </tr>
-      <tr>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>after</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>OptionProps</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional props for content displayed after the number.</td>
-      </tr>
-      <tr>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>clasname</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>string</td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}></td>
-        <td style={{ border: '1px solid #ddd', padding: '8px' }}>Optional CSS class for styling the component.</td>
-      </tr>
-    </tbody>
-  </table>
+<div className="rounded-lg border bg-background">
+  <Table className="border-collapse">
+    <TableHeader>
+      <TableRow className="hover:bg-transparent">
+        <TableHead className="w-[150px] border-r last:border-r-0">Prop</TableHead>
+        <TableHead className="w-[150px] border-r last:border-r-0">Type</TableHead>
+        <TableHead className="text-right">Default</TableHead>
+        <TableHead className="border-r last:border-r-0">Description</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">currentValue</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">number</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          The current number value to be displayed.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">format</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">NumberFormat</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">{}</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Options for formatting the number.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">before</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">OptionProps</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional props for content displayed before the number.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">first</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">OptionProps</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional props for content displayed before the first number.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">last</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">OptionProps</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional props for content displayed after the last number.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">after</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">OptionProps</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional props for content displayed after the number.
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="border-r last:border-r-0">
+          <code className="rounded bg-muted px-1 py-0.5">classname</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          <Badge variant="secondary" className="font-mono text-xs">string</Badge>
+        </TableCell>
+        <TableCell className="text-right">
+          <code className="rounded bg-muted px-1 py-0.5">undefined</code>
+        </TableCell>
+        <TableCell className="border-r last:border-r-0">
+          Optional CSS class for styling the component.
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
 </div>

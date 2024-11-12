@@ -87,7 +87,7 @@ export default async function ComponentCodePreview({
           </TabsTrigger>
         </TabsList>
         <TabsContent
-          className='mt-0  px-0 pb-0 pt-12 ring-offset-background '
+          className='mt-0  px-0 pb-0 pt-12 ring-offset-background  '
           value={`${name}preview`}
         >
           <ComponentPreview
@@ -99,7 +99,7 @@ export default async function ComponentCodePreview({
             isFitheight={isFitheight}
           />
         </TabsContent>
-        <TabsContent className='mt-11  ' value={`${name}code`}>
+        <TabsContent className='mt-11 ' value={`${name}code`}>
           {!isTab && <PreCoded codeblock={fileContent} />}
           {children !== undefined && <div className='p-4 pt-2'>{children}</div>}
         </TabsContent>
