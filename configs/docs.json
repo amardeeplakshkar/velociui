@@ -41,6 +41,20 @@
     },
 
     {
+      "name": "Hyper Text",
+      "componentArray": [
+        {
+          "componentName": "hyper-text",
+          "filesrc": "components/hyper-text/hyper-text.tsx",
+          "iframeSrc": "live-components/hyper-text",
+          "parentlink": "hyper-text",
+          "parentName": "Hyper Text"
+        }
+      ],
+      "type": "creative"
+    },
+
+    {
       "name": "OrbitingCircles",
       "componentArray": [
         {

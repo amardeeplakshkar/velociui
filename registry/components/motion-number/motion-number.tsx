@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import NumberShuffle from '@/components/core/numbersuffle';
 
-export default function index() {
+export default function MotionNumberDemo() {
   const numbers = [124.23, 41.75, 2125.95];
   const diffs = [0.0564, -0.114, 0.0029];
 

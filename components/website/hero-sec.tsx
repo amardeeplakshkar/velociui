@@ -55,7 +55,7 @@ function HeroSec() {
   }, [activeDivs]);
   return (
     <>
-      <section className='min-h-screen py-24 overflow-hidden  relative  '>
+      <section className='py-24 overflow-hidden  relative  '>
         <div className='absolute inset-0 top-0 left-0  h-screen w-full items-center px-5 py-24 dark:[background:radial-gradient(87.03%_87.03%_at_50.05%_12.97%,rgba(217,217,217,0)_40%,#010716_100%)] [background:radial-gradient(87.03%_87.03%_at_50.05%_12.97%,rgba(217,217,217,0)_40%,#ffffff_100%)]'></div>
         <article className='grid gap-4 py-20 relative z-10 sm:px-0 px-4'>
           <a

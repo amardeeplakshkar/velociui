@@ -58,7 +58,7 @@ const appsDesign = [
     imgSrc: preview.blurvignette,
   },
   {
-    url: '/components/circles',
+    url: '/components/orbitingcircles',
     name: 'Circles',
     new: true,
     component: 'creative',

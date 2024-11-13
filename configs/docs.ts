@@ -57,10 +57,14 @@ export const MainComponents = [
     component: 'creative',
   },
   {
+    href: '/components/hyper-text',
+    name: 'Hyper Text',
+    component: 'creative',
+  },
+  {
     href: '/components/globe',
     name: 'Globe',
     new: true,
     component: 'creative',
   },
-
 ];
